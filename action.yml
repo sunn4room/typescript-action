@@ -1,0 +1,8 @@
+name: 'typescript action template'
+author: 'sunn4room'
+inputs:
+  name:
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

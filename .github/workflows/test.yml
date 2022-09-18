@@ -1,0 +1,16 @@
+name: 'build-test'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: run action
+        uses: ./
+        with:
+          name: tony
